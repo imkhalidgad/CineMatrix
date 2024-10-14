@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaCell" rowHeight="188" id="KGk-i7-Jjw" customClass="MediaCell" customModule="BM_Task_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TfW-S8-86A">
+                        <rect key="frame" x="5" y="12" width="149" height="163"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-5W-aWd">
+                        <rect key="frame" x="196" y="111" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="buh-1i-xKs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUk-oI-wdc">
+                        <rect key="frame" x="196" y="79" width="192" height="28"/>
+                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                        <color key="textColor" name="Second_Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MUk-oI-wdc" secondAttribute="trailing" constant="8" id="2ek-sn-snj"/>
+                    <constraint firstItem="CV8-5W-aWd" firstAttribute="leading" secondItem="MUk-oI-wdc" secondAttribute="leading" id="H0s-ZY-A0r"/>
+                    <constraint firstItem="MUk-oI-wdc" firstAttribute="leading" secondItem="TfW-S8-86A" secondAttribute="trailing" constant="42" id="Jex-af-Viy"/>
+                    <constraint firstItem="TfW-S8-86A" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" constant="-25" id="LbF-pF-PJ6"/>
+                    <constraint firstItem="TfW-S8-86A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Ovw-e9-i2F"/>
+                    <constraint firstItem="MUk-oI-wdc" firstAttribute="centerY" secondItem="TfW-S8-86A" secondAttribute="centerY" constant="-0.5" id="QaD-Ck-N4r"/>
+                    <constraint firstAttribute="bottom" secondItem="TfW-S8-86A" secondAttribute="bottom" constant="13" id="VDv-r6-Wvg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CV8-5W-aWd" secondAttribute="bottom" constant="10" id="YCS-f7-TZ8"/>
+                    <constraint firstItem="TfW-S8-86A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="cF0-Gk-GlY"/>
+                    <constraint firstItem="TfW-S8-86A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="dKR-XF-fwd"/>
+                    <constraint firstItem="TfW-S8-86A" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.505051" constant="-51.000196000000017" id="riS-54-Bkj"/>
+                    <constraint firstItem="CV8-5W-aWd" firstAttribute="top" secondItem="MUk-oI-wdc" secondAttribute="bottom" constant="4" id="uqG-Pq-fTZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avgLabel" destination="CV8-5W-aWd" id="Pj2-J6-jVV"/>
+                <outlet property="imgCell" destination="TfW-S8-86A" id="dTf-PL-olb"/>
+                <outlet property="labelCell" destination="MUk-oI-wdc" id="ADg-vT-njY"/>
+            </connections>
+            <point key="canvasLocation" x="114.50381679389312" y="-25.35211267605634"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Second_Color">
+            <color red="0.82352941176470584" green="0.18823529411764706" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
